@@ -1,0 +1,8 @@
+Flask
+requests
+beautifulsoup4
+pandas
+Flask-SQLAlchemy
+Flask-Mail
+Flask-WTF
+werkzeug

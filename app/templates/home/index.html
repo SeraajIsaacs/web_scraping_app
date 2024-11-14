@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <title>Web Scraping App</title>
+</head>
+<body>
+    <h1>Web Scraping App</h1>
+    <form method="post">
+        <label for="site_name">Site Name:</label>
+        <input type="text" name="site_name" required><br>
+        <label for="api_info">API Information:</label>
+        <input type="text" name="api_info" required><br>
+        <label for="scrape_type">Scrape Type:</label>
+        <select name="scrape_type">
+            <option value="price_monitor">Price Monitor</option>
+            <option value="real_estate">Real Estate</option>
+            <option value="lead_gen">Lead Generation</option>
+            <!-- Other options here -->
+        </select><br>
+        <button type="submit">Run Scraper</button>
+    </form>
+    <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+
+    <!-- Logout Button -->
+    <a href="{{ url_for('logout') }}">Logout</a>
+    
+</body>
+</html>
